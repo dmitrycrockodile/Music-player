@@ -16,6 +16,8 @@ const randomIcon = document.querySelector('.fa-random');
 
 const currTrack = document.createElement('audio');
 
+const githubCat = document.querySelector('github-cat');
+
 let trackIndex = 0;
 let isPlaying = false;
 let isRandom = false;
@@ -77,7 +79,6 @@ function randomBgColor() {
    function generateColor(a) {
       for (let i = 0; i < 6; i++) {
          let x = Math.round(Math.random() * 14);
-         console.log(x);
          let y = hex[x];
          a += y;
       }
